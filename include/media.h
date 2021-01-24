@@ -163,7 +163,7 @@ public:
 
 	DWORD GetLength() const			{ return buffer->GetSize();			}
 	DWORD GetMaxMediaLength() const		{ return buffer->GetCapacity();			}
-	const BYTE* GetData() const		{ return buffer->GetData();			}
+//	const BYTE* GetData() const		{ return buffer->GetData();			}
 
 	BYTE* GetData()				{ AdquireBuffer(); return buffer->GetData();	}
 	void SetLength(DWORD length)		{ AdquireBuffer(); buffer->SetSize(length);	}
